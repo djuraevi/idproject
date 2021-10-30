@@ -122,6 +122,16 @@
     justify-content: space-around;
   }
 
+  .wrapper:hover{
+    cursor: pointer;
+    .item__button{
+      display: block;
+      position: absolute;
+      left: 304px;
+      top: -10px;
+    }
+
+  }
   .item{
       width: 332px;
       height: 423px;
@@ -150,12 +160,8 @@
         padding-left: 16px;
       }
       &__button{
-        display: block;
-        position: absolute;
-        left: 304px;
-        top: -10px;
+       display: none;
       }
-    
   }
 
 

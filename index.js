@@ -1,14 +1,20 @@
+// кнопка удаления карточек
+
+const buttonsRemove = document.querySelectorAll('.item__button');
+
+function handleClick (e) {
+    const currentButton = e.currentTarget;
+    currentButton.closest('.item').remove();
+}
+
+buttonsRemove.forEach(button => {
+    button.addEventListener('click', handleClick)
+})
+
+// кнопка добавления карточки
 
 const buttonAdd = document.querySelector('.form__button');
 buttonAdd.addEventListener("click", createCard);
-
-const buttonRemove = document.querySelector('.item__button');
-buttonRemove.addEventListener("click", removeCard);
-
-function removeCard () {
-    const cardItem = document.querySelector('.item');
-    cardItem.remove();
-}
 
 
 function createCard() {
