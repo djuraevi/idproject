@@ -53,6 +53,9 @@
       color: #B4B4B4;
     }
   }
+  .active{
+    border: 1px solid #FF8484;
+  }
 
   .header{
     max-width: 1376px;
@@ -79,7 +82,8 @@
     margin: auto;
     &__description{
         height: 108px;
-        padding: 10px 132px 83px 16px;
+        padding: 10px 0 83px 16px;
+        resize: none;
     }
     &__text{
         font-size: 10px;
@@ -105,14 +109,23 @@
         line-height: 15px;
         text-align: center;
         letter-spacing: -0.02em;
-        color: #B4B4B4; 
+        color: #B4B4B4;
+        &-active{
+          width: 284px;
+          height: 36px; 
+          font-family: Inter;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 15px;
+          text-align: center;
+          letter-spacing: -0.02em;
+          background: #7BAE73;
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+          border-radius: 10px;
+          color: #FFFFFF;
+        } 
       }
-    &__button:active{
-        background: #7BAE73;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-        border-radius: 10px;
-        color: #FFFFFF;
-    }
   }
 
   .content{

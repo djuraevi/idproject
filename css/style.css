@@ -70,6 +70,10 @@ body {
   color: #B4B4B4;
 }
 
+.active {
+  border: 1px solid #FF8484;
+}
+
 .header {
   max-width: 1376px;
   margin: 31px auto 16px;
@@ -106,9 +110,14 @@ body {
   margin: auto;
 }
 
+.form__name-active {
+  border: 1px solid #FF8484;
+}
+
 .form__description {
   height: 108px;
-  padding: 10px 132px 83px 16px;
+  padding: 10px 0 83px 16px;
+  resize: none;
 }
 
 .form__text {
@@ -140,7 +149,16 @@ body {
   color: #B4B4B4;
 }
 
-.form__button:active {
+.form__button-active {
+  width: 284px;
+  height: 36px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: -0.02em;
   background: #7BAE73;
   -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
