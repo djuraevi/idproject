@@ -44,7 +44,7 @@ function handleClick (e) {
     const currentButton = e.currentTarget;
     currentButton.closest('.item').remove();
 }
-
+                                        
 buttonsRemove.forEach(button => {
     button.addEventListener('click', handleClick)
 })
